@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #ff0080, #ff8c00);
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80px auto;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.xt{
+    font-weight: bold;
+    font-size: 14px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.wrapper .nama {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 160px;
+}
+
+.xrap {
+    width: 100%;
+}
+
+.xrap input {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.5;
+}
+
+.dice-button {
+    cursor: pointer;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: -5px;
+    position: absolute;
+    right:60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.253);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+}
+
+.kirim{
+    display: flex;
+
+}
+.kirim button {
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.vc {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ano{
+    display: flex;
+    font-size: 14px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    justify-content: center;
+}
+.count {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.ketuk {
+    width: 100%;
+    max-width: 600px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ketuk:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+.ketuk a{
+    text-decoration: none;
+    color: white;
+}
+/* Responsiveness */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .xrap input {
+        width: 100%;
+    }
+
+    .dice-button {
+        cursor: pointer;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-top: -25px;
+        position: absolute;
+        right:60px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.253);
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 50px;
+    
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .xrap input {
+        width: 100%;
+    }
+
+    .ketuk {
+        font-size: 18px;
+        height: 55px;
+    }
+    .dice-button {
+        cursor: pointer;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+        position: absolute;
+        right:30px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.253);
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 50px;
+    
+    }
+}
+
+/* Layar sangat kecil */
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .ketuk {
+        font-size: 16px;
+        height: 50px;
+    }
+}

